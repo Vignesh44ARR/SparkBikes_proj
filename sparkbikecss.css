@@ -1,0 +1,825 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#logoname {
+  font-size: 23px;
+}
+.footer {
+  display: flex;
+  margin: 0% 10% 0% 10%;
+}
+.pad {
+  margin-left: 3px;
+}
+#mpad {
+  padding: 30px;
+}
+
+#logo {
+  width: 50px;
+  height: 50px;
+}
+.ah {
+  color: white;
+  font-size: 18px;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.nav {
+  gap: 20px;
+  padding: 0% 3% 0% 3%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.footer div {
+  width: 25%;
+  list-style: none;
+  gap: 10px;
+  text-align: center;
+}
+
+textarea {
+  padding: 3px;
+  padding-left: 5px;
+  background-color: #eef0f5;
+  border: 1px solid #bbbcc2;
+  border-radius: 8px;
+}
+
+li {
+  list-style-type: none;
+  text-align: center;
+}
+
+/* table */
+
+#tab {
+  width: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+#tab th {
+  text-align: left;
+}
+#tab td {
+  text-align: right;
+}
+
+.loc {
+  color: rgb(0, 0, 68);
+  font-weight: bold;
+  border-radius: 4px;
+  border: 1px solid rgb(163, 163, 163);
+  padding: 15px;
+  display: flex;
+  gap: 10px;
+  background-color: rgba(255, 225, 168, 0.74);
+  justify-content: center;
+}
+.loc > div {
+  width: 30%;
+}
+
+.button {
+  width: 150px;
+  padding: 6px;
+  border-radius: 7px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.back-theme {
+  background-color: #020843;
+}
+
+.backlightorange {
+  background-color: rgb(241, 185, 63);
+}
+
+.white {
+  color: white;
+}
+
+.head-size {
+  font-size: 28px;
+}
+
+.sub-head {
+  font-size: 23px;
+}
+
+.mediumsize {
+  font-size: 15px;
+}
+
+.line {
+  height: 3px;
+  background-color: #020843;
+}
+
+.theme-head-color {
+  color: #020843;
+}
+
+.bancolor {
+  color: #ad0049;
+}
+
+.red {
+  color: red;
+}
+
+.ash-color {
+  color: #64646b;
+}
+/* servers
+ */
+
+.form-page {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.form-box {
+  border: 2px solid #c2bbbb;
+  border-top: 4px solid #020843;
+  padding: 10px;
+}
+.btnmain {
+  width: 200px;
+  height: 40px;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.inputs {
+  width: 250px;
+  padding-left: 3px;
+  height: 30px;
+  background-color: rgb(242, 241, 248);
+  color: rgb(0, 0, 53);
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+
+/* login page Design */
+.Forms-split {
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin: 0% 7% 0% 7%;
+}
+
+#log_form_contains {
+  margin-left: 10%;
+}
+
+#log-forms {
+  padding-left: 60px;
+  width: 50%;
+  border: 2px solid #c2bbbb;
+  border-top: 4px solid #020843;
+}
+
+#logimg {
+  width: 50%;
+}
+
+/* brand */
+
+#bran img {
+  height: 90px;
+  width: 90px;
+  padding-left: 10px;
+}
+#bran {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Sign page */
+
+.Forms-split-sign {
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+}
+
+#sign_form_contains {
+  margin-left: 0%;
+}
+
+#serve-forms {
+  width: 60%;
+  padding-left: 30px;
+  border: 2px solid #c2bbbb;
+  border-top: 3px solid #020843;
+  margin: 3px;
+}
+
+#sign-forms {
+  padding-left: 60px;
+  padding-right: 10px;
+  width: 60%;
+
+  border: 2px solid #c2bbbb;
+  border-top: 3px solid #020843;
+  margin: 3px;
+}
+
+#serve-forms {
+  width: 100%;
+}
+
+#signimg {
+  margin-left: 10px;
+  width: 30%;
+}
+
+#sign-imgs {
+  width: 330px;
+  height: 400px;
+}
+
+#sign-Split {
+  display: flex;
+}
+
+#sign-Split > div {
+  width: 50%;
+}
+
+#terms_and_conditions {
+  width: 18px;
+  height: 14px;
+}
+
+/* card */
+.cardbox {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.cardbox > div {
+  width: 250px;
+  padding: 5px;
+  text-align: center;
+  border: 3px solid rgb(168, 168, 168);
+  border-radius: 5px;
+}
+.cardimgsize {
+  width: 180px;
+  height: 140px;
+}
+
+/* Banner */
+.h1 {
+  font-family: "Pacifico", cursive;
+  color: rgb(139, 29, 29);
+}
+
+.right {
+  text-align: right;
+  padding-right: 15px;
+}
+
+.center {
+  text-align: center;
+}
+
+.h2 {
+  font-family: "Pacifico", cursive;
+  font-weight: lighter;
+  color: #020843;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid rgb(179, 179, 179);
+}
+
+.banner > div {
+  width: 50%;
+  height: 350px;
+}
+
+#band_img_service {
+  width: 100%;
+  height: 350px;
+}
+
+/* achive */
+
+.ach-board {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.imgsize {
+  width: 60px;
+  height: 60px;
+}
+
+.big {
+  font-size: 50px;
+}
+
+.ach-board > div {
+  width: 200px;
+  text-align: center;
+}
+
+/* diaplay page */
+
+.miniimg {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+}
+.miniimg > div {
+  width: 100px;
+  height: 50px;
+}
+#tabl {
+  width: 100%;
+}
+
+.minimgs {
+  width: 90px;
+  height: 50px;
+}
+#bkimg {
+  width: 100%;
+  height: 400px;
+}
+.bikesplit {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+.bikesplit > div {
+  width: 50%;
+}
+
+/* special for signup */
+
+@media screen and (max-width: 1200px) {
+  /* display bike */
+
+  .miniimg > div {
+    width: 60px;
+    height: 30px;
+  }
+
+  .minimgs {
+    width: 60px;
+    height: 30px;
+  }
+  #bkimg {
+    height: 380px;
+  }
+  .btnmain {
+    width: 140px;
+    height: 30px;
+  }
+
+  /* card */
+  .cardbox {
+    gap: 40px;
+  }
+
+  .inputs {
+    width: 200px;
+    height: 27px;
+  }
+  .cardbox > div {
+    width: 230px;
+    padding: 4px;
+  }
+  .cardimgsize {
+    width: 150px;
+    height: 130px;
+  }
+  /* achive */
+  .imgsize {
+    width: 50px;
+    height: 50px;
+  }
+
+  .big {
+    font-size: 45px;
+  }
+
+  .ach-board > div {
+    width: 180px;
+  }
+
+  /* Banner */
+  .h1 {
+    font-size: 28px;
+  }
+
+  .h2 {
+    font-size: 20px;
+  }
+
+  .banner > div,
+  #band_img_service {
+    height: 300px;
+  }
+
+  /* login page Design */
+  #log-imgs {
+    width: 350px;
+    height: 300px;
+  }
+
+  #log_form_contains {
+    margin-left: 5%;
+  }
+
+  /* sign up */
+  #sign-imgs {
+    width: 0px;
+    height: 0px;
+  }
+
+  #sign-Split {
+    flex-wrap: wrap-reverse;
+  }
+
+  #sign-Split > div {
+    width: 100%;
+  }
+
+  /* Common */
+
+  #bran img {
+    height: 60px;
+    width: 60px;
+    padding-left: 8px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  li {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .miniimg > div {
+    width: 40px;
+    height: 30px;
+  }
+
+  .minimgs {
+    width: 60px;
+    height: 30px;
+  }
+  #bkimg {
+    height: 300px;
+  }
+  .btnmain {
+    width: 90px;
+    height: 25px;
+  }
+
+  #sign-Split {
+    flex-wrap: wrap-reverse;
+  }
+
+  .inputs {
+    width: 170px;
+    height: 24px;
+  }
+
+  #sign-Split > div {
+    width: 100%;
+  }
+  .line {
+    height: 0.5px;
+  }
+
+  .head-size {
+    font-size: 19px;
+  }
+
+  .sub-head {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  a {
+    font-size: 13px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  .button {
+    width: 100px;
+    padding: 2px;
+  }
+  /* card */
+  .cardbox {
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+
+  .cardbox > div {
+    width: 150px;
+    padding: 4px;
+  }
+  .cardimgsize {
+    width: 110px;
+    height: 90px;
+  }
+
+  /* achive */
+  .imgsize {
+    width: 30px;
+    height: 30px;
+  }
+
+  .big {
+    font-size: 35px;
+  }
+
+  .ach-board > div {
+    width: 160px;
+  }
+
+  /* sign up */
+  #sign-imgs {
+    width: 200px;
+    height: 180px;
+    color: rgba(126, 155, 250, 0.596);
+  }
+
+  #sign-Split {
+    flex-wrap: wrap-reverse;
+  }
+
+  .Forms-split-sign {
+    flex-wrap: wrap-reverse;
+  }
+
+  #sign-forms {
+    padding-left: 25px;
+    width: 100%;
+  }
+
+  /* Login page  */
+  .Forms-split {
+    flex-wrap: wrap-reverse;
+  }
+
+  #log-imgs {
+    width: 120px;
+    height: 80px;
+  }
+
+  #log-forms {
+    width: 100%;
+    padding-left: 10%;
+  }
+
+  #logimg {
+    width: 100%;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer div {
+    width: 50%;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  li {
+    font-size: 12px;
+  }
+}
+
+/* Banner */
+
+/* Banner */
+@media screen and (max-width: 600px) {
+  /* display bike */
+
+  .bikesplit {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .bikesplit > div {
+    width: 100%;
+  }
+  .minimgs {
+    width: 40px;
+    height: 25px;
+  }
+  .miniimg > div {
+    width: 40px;
+    height: 20px;
+  }
+  .h1 {
+    font-size: 18px;
+  }
+
+  #bran img {
+    height: 40px;
+    width: 40px;
+  }
+  .h2 {
+    font-size: 15px;
+  }
+
+  .banner > div,
+  #band_img_service {
+    height: 240px;
+  }
+
+  .cardbox {
+    gap: 5px;
+  }
+  .cardbox > div {
+    width: 130px;
+    padding: 4px;
+  }
+  .cardimgsize {
+    width: 95px;
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .ach-board {
+    flex-wrap: wrap;
+  }
+
+  .loc {
+    flex-wrap: wrap;
+  }
+  .loc > div {
+    width: 100%;
+  }
+  .ach-board > div {
+    width: 90px;
+  }
+  .footer {
+    flex-wrap: wrap;
+  }
+
+  .footer div {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cardbox {
+    gap: 5px;
+  }
+  .cardbox > div {
+    width: 100px;
+    padding: 4px;
+  }
+  .cardimgsize {
+    width: 85px;
+    height: 70px;
+  }
+  .form-page {
+    flex-wrap: wrap;
+  }
+  .logh {
+    font-size: 15px;
+  }
+  .nav {
+    gap: 5px;
+    padding: 0%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .ah {
+    font-size: 11px;
+  }
+  #logo {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* dfdsf */
+
+.header {
+  border-bottom: 1px solid #e2e8f0;
+  background-color: #020843;
+  margin: 10px 0px 10px 0px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 10px;
+}
+
+a {
+  text-decoration: none;
+}
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 30px;
+}
+
+.nav-link {
+  font-size: 18px;
+  font-weight: 200;
+  color: white;
+}
+
+.nav-logo {
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: white;
+}
+
+@media only screen and (max-width: 830px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #020843;
+    width: 100%;
+    border-radius: 1px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 5px 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    background-color: rgb(223, 220, 220);
+  }
+}

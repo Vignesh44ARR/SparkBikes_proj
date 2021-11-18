@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bike sale</title>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="./sparkbikecss.css">
+  <link rel="stylesheet" href="./nav.js">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar">
+        <a href="#" class="nav-logo"> <img style="margin-top:2px ;" width="50" height="30" src="https://cdn.pixabay.com/photo/2014/04/03/09/59/motorcycle-309527_960_720.png" alt="">
+         <span id="logoname" style="margin-top:-5px;"  > Spark Bikes</span></a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="./BikeServiepage.html"> Service & Repair </a> 
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./SparkBikeSalepage.html"> Sale My Bike </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./SparkBike_buybikespage.html"> Buy Used Bike </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html"> Log-out </a> 
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./SparkBike_Sign.html"> Sign-up </a> 
+          </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+</header>
+  <div class="banner">
+    <div id="hiromo" style="padding: 15px">
+      <h2 class="h2 theme-head-color">Best Bike Service in the Town</h2>
+
+
+      <h1 class=" h1 bancolor  center">
+        Sale My Used Bikez
+
+
+
+        <h2 class=" h2 theme-head-color right">
+          We Collect, drop your Vehicle in same day
+        </h2>
+        <br>
+    </div>
+    <div>
+     
+      <img id="band_img_service"
+        src="https://previews.123rf.com/images/bsd555/bsd5552001/bsd555200102561/138813542-man-buying-motorcycle-on-sale-flat-doodle-illustration-tourist-purchasing-local-transport-salesman-s.jpg"
+        alt="" />
+    </div>
+  </div>
+  <div class="container">
+    <br><br>
+
+    <!-- Forms -->
+    <form onsubmit="return salmybikepostdata()" id="SaleMyBike" name="SaleMyBike">
+      <div class="form-box">
+        <h1 class="center h1">Sale my old Bike</h1>
+        <div class="form-page">
+          <div>
+            <br />
+            <label for="">Full Name<span class="red">*</span> </label> <br />
+            <input  required class="inputs" type="text" name="nam" placeholder="Full Name" />
+            <br /><br />
+            <label for="">Mobile No<span class="red">*</span> </label> <br />
+            <input required class="inputs" name="mob" type="number" placeholder="Mobile No" />
+            <br /><br />
+            <label for="">Bike No<span class="red">*</span> </label> <br />
+            <input required name="bno" class="inputs" type="number" placeholder="Bike No" />
+          </div>
+          <div>
+            <br />
+            <label for="">Select Onwer<span class="red">*</span> </label>
+            <br />
+            <select id="own" class="inputs" name="" id="">
+              <option value="1">1st</option>
+              <option value="2">2nd</option>
+              <option value="3">3rd</option>
+              <option value="4">4th</option>
+            </select>
+            <br /><br />
+            <label for="">Bike Name<span class="red">*</span> </label> <br />
+            <input required name="bknam" class="inputs" type="text" placeholder="Bike Company Name" />
+            <br /><br />
+            <label for="">Bike Model<span class="red">*</span> </label> <br />
+            <input required id=bkmod class="inputs" type="text" placeholder="Bike Model" />
+          </div>
+        </div>
+        <br />
+        <div class="center">
+          <input class="button back-theme white" value="Submit" type="submit" />
+          <input type="reset" class="button back-theme white"></input>
+        
+          <br />
+          <br />
+        </div>
+      </div>
+    </form>
+    <br><br>
+    <!-- Card Views -->
+    <div class="cardbox">
+      <div>
+        <img class="cardimgsize" src="https://www.joyebike.com/wp-content/uploads/2021/10/1.png" alt="mg" />
+        <br />
+        <p>
+          “A real decision is measured by the fact that you’ve taken a new
+          action. If there’s no action, you haven’t truly decided.”
+        </p>
+      </div>
+      <div>
+        <img class="cardimgsize"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDy8J958QLiij87LDO8hB6HdJ0flx_hAp2LQ&usqp=CAU"
+          alt="img" />
+        <br />
+        <p>
+          “A real decision is measured by the fact that you’ve taken a new
+          action. If there’s no action, you haven’t truly decided.”
+        </p>
+      </div>
+      <div>
+        <img class="cardimgsize"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRewmwvBUkwM5psI4rCBatoXI7kop_7hDsbgA&usqp=CAU"
+          alt="img" />
+        <br />
+        <p>
+          “A real decision is measured by the fact that you’ve taken a new
+          action. If there’s no action, you haven’t truly decided.”
+        </p>
+      </div>
+      <div>
+        <img class="cardimgsize"
+          src="https://yt3.ggpht.com/ytc/AKedOLS4_DD5Z0B4rEyX-XulluB5RdQ5J8y-jqqlfUL0_g=s900-c-k-c0x00ffffff-no-rj"
+          alt="img" />
+        <br />
+        <p>
+          “A real decision is measured by the fact that you’ve taken a new
+          action. If there’s no action, you haven’t truly decided.”
+        </p>
+      </div>
+    </div>
+    <br><br>
+  </div>
+
+  <footer class="back-theme white">
+
+    <div id="mpad" class="footer">
+      <div>
+        <h3>SparkBikers.com</h3>
+        <li>About Us</li>
+        <li>Terms and Conditions</li>
+        <li>Privacy Policy</li>
+        <li>Refunds and Cancellations</li>
+      </div>
+      <div>
+        <h3>Resources</h3>
+        <li>My Account</li>
+        <li>Buy Used Bike</li>
+        <li>Sell My Bike</li>
+        <li>FAQs</li>
+        <li>Sitemap</li>
+      </div>
+      <div>
+        <h3>Contact Us</h3>
+        <li>Email: support@sparkbikers.com</li>
+        <li>Call: +91-8792837282</li>
+        <li>WhatsApp: +91-9335354667</li>
+        <li>Bike Hub Location</li>
+        <li>Office Address</li>
+      </div>
+      <div>
+        <h3>Social Media Links</h3>
+        <span>&nbsp;</span>
+        <img width="25" height="25" src="https://png.pngtree.com/element_our/md/20180626/md_5b321c98efaa6.jpg" alt="">
+        <img  width="25" height="25" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2TXJKM4LRYGe4vRJaFvwkQSrCo9UnsUvKPA&usqp=CAU" alt="">
+        <img width="25" height="25" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLtapKth8dLZTb0z-2um6eidPw5hzDZdKWQqRc4NUHGExpORro0MBkfNku7f-2hRMFokM&usqp=CAU" alt="">
+        <img  width="25" height="25" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNVDI2NdKqaP79L-fMLvvTK76IgfR04hMf8A&usqp=CAU" alt="">
+        <img width="25" height="25" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-JEGqgMHF_laM4hYrXc2NB03w2OcT24zjWw&usqp=CAU" alt="">
+        
+      </div>
+    </div>
+    <hr style="margin-left: 7%; margin-right: 7%; border: 1px solid oldlace" />
+   <br>
+    <p style="text-align: center">
+      © Spark Bikers 2020. All Rights Reserved. All trademarks are property of
+      Spark Bikers Pvt. Ltd.
+    </p>
+    <br />
+  </footer>
+</body>
+
+</html>
+
+
+<script>
+  const poststudentnotes = async (data) => {
+    try {
+      let api = await axios.post(
+        "https://6190ddab41928b001768fea0.mockapi.io/Salemybike",
+        data
+      );
+      console.log(api)
+      if (api.status === 201) return true;
+
+      return false;
+    } catch (error) {
+      console.log(error)
+    }
+  };
+
+  const Salmybike = async (event) => {
+    event.preventDefault();
+    const salmybike = document.forms["SaleMyBike"];
+
+    const bsuName = salmybike.nam.value;
+    const bsmno = salmybike.mob.value;
+    const bsno = salmybike.bno.value;
+    const bsmod = document.querySelector('#bkmod').value
+    const bsnam = salmybike.bknam.value;
+    var e = document.getElementById("own");
+    var bkown = e.value;
+    const Salemybike = {
+      userName: bsuName,
+      mob: bsmno,
+      bkname: bsnam,
+      bkno: bsno,
+      bkmodel: bsmod,
+      own: bkown,
+    };
+    console.log("hello");
+    await poststudentnotes(Salemybike) ? alert("We Contact Soon") : alert("Invalid Try Again")
+    
+  };
+
+  document
+    .querySelector("#SaleMyBike")
+    .addEventListener("submit", Salmybike, true);
+
+// nav bar
+
+    const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
+
+</script>

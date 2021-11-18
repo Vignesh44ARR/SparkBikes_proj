@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bike view</title>
+    <link rel="stylesheet" href="./sparkbikecss.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="#" class="nav-logo">
+          <img
+            style="margin-top: 2px"
+            width="50"
+            height="30"
+            src="https://cdn.pixabay.com/photo/2014/04/03/09/59/motorcycle-309527_960_720.png"
+            alt=""
+          />
+          <span id="logoname" style="margin-top: -5px"> Spark Bikes</span></a
+        >
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="./BikeServiepage.html">
+              Service & Repair
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./SparkBikeSalepage.html">
+              Sale My Bike
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./SparkBike_buybikespage.html">
+              Buy Used Bike
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html"> Log-out </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./SparkBike_Sign.html"> Sign-up </a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <div class="cont">
+      <div class="filt">
+        <br /><br />
+        <h3 class="h3">Filters</h3>
+        <input type="checkbox" /> <label for=""> Hero</label> <br /><br />
+
+        <input type="checkbox" /> <label for="">Aprilia</label> <br /><br />
+
+        <input type="checkbox" /> <label for=""> Bajaj</label> <br /><br />
+
+        <input type="checkbox" /> <label for=""> Royal Enfield</label>
+        <br /><br />
+
+        <input type="checkbox" /> <label for=""> TVS</label> <br /><br />
+
+        <input type="checkbox" /> <label for=""> Honda</label> <br /><br />
+
+        <input type="checkbox" /> <label for=""> Suzuki</label> <br /><br />
+
+        <input type="checkbox" /> <label for=""> Yamaha</label> <br /><br />
+        <br />
+        <button class="white back-theme button">Filter</button>
+        <br /><br />
+      </div>
+      <div style="width: 90%">
+        <div>
+          <div class="cardbox"></div>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <footer class="back-theme white">
+      <div id="mpad" class="footer">
+        <div>
+          <h3>SparkBikers.com</h3>
+          <li>About Us</li>
+          <li>Terms and Conditions</li>
+          <li>Privacy Policy</li>
+          <li>Refunds and Cancellations</li>
+        </div>
+        <div>
+          <h3>Resources</h3>
+          <li>My Account</li>
+          <li>Buy Used Bike</li>
+          <li>Sell My Bike</li>
+          <li>FAQs</li>
+          <li>Sitemap</li>
+        </div>
+        <div>
+          <h3>Contact Us</h3>
+          <li>Email: support@sparkbikers.com</li>
+          <li>Call: +91-8792837282</li>
+          <li>WhatsApp: +91-9335354667</li>
+          <li>Bike Hub Location</li>
+          <li>Office Address</li>
+        </div>
+        <div>
+          <h3>Social Media Links</h3>
+          <span>&nbsp;</span>
+          <img
+            width="25"
+            height="25"
+            src="https://png.pngtree.com/element_our/md/20180626/md_5b321c98efaa6.jpg"
+            alt=""
+          />
+          <img
+            width="25"
+            height="25"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2TXJKM4LRYGe4vRJaFvwkQSrCo9UnsUvKPA&usqp=CAU"
+            alt=""
+          />
+          <img
+            width="25"
+            height="25"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLtapKth8dLZTb0z-2um6eidPw5hzDZdKWQqRc4NUHGExpORro0MBkfNku7f-2hRMFokM&usqp=CAU"
+            alt=""
+          />
+          <img
+            width="25"
+            height="25"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNVDI2NdKqaP79L-fMLvvTK76IgfR04hMf8A&usqp=CAU"
+            alt=""
+          />
+          <img
+            width="25"
+            height="25"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-JEGqgMHF_laM4hYrXc2NB03w2OcT24zjWw&usqp=CAU"
+            alt=""
+          />
+        </div>
+      </div>
+      <hr
+        style="margin-left: 7%; margin-right: 7%; border: 1px solid oldlace"
+      />
+      <br />
+      <p style="text-align: center">
+        © Spark Bikers 2020. All Rights Reserved. All trademarks are property of
+        Spark Bikers Pvt. Ltd.
+      </p>
+      <br />
+    </footer>
+  </body>
+</html>
+<script>
+  // nav bar
+
+  const hamburger = document.querySelector(".hamburger");
+  const navMenu = document.querySelector(".nav-menu");
+
+  hamburger.addEventListener("click", mobileMenu);
+
+  function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+  }
+
+  const navLink = document.querySelectorAll(".nav-link");
+
+  navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+  function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+  }
+</script>
+
+<script>
+  fetchdata();
+  componentDidMount();
+
+  axios.get().then((resp) => {
+    console.log(resp.data);
+  });
+
+  function fetchdata() {
+    axios
+      .get("https://6190ddab41928b001768fea0.mockapi.io/Bikedetails")
+      .then((res) => {
+        res.data.map((ele, idx) => {
+          document.querySelector(".cardbox").innerHTML += `
+        <div onclick="bikedisplay(${ele.id})" >
+        <img class="cardimgsize"
+        src=${ele.mainimg}
+        alt="img" />
+        <br />
+        <table id="tab">
+          <tr>
+            <th>Bike Name</th>
+            <td id="bikename">${ele.bikename}</td>
+          </tr>
+          <tr>
+            <th>Price</th>
+            <td id="price">${ele.price}</td>
+          </tr>
+        </table>
+        <button style="background-color: rgb(25, 63, 25)" class="white button">
+          View Info
+        </button>
+        
+        <br /> <br/>
+      </div> `;
+        });
+      })
+      .catch((err) => console.log(err));
+  }
+
+  function bikedisplay(ele) {
+    localStorage.setItem("myValue", ele);
+    window.location.href = "./bikeDisplay.html";
+  }
+</script>
+
+<style>
+  .h3 {
+    font-size: 30px;
+  }
+
+  label {
+    font-size: 20px;
+    color: navy;
+  }
+
+  .cardbox {
+    flex-wrap: wrap;
+  }
+
+  .cont {
+    margin-right: 10px;
+    display: flex;
+    justify-items: center;
+  }
+
+  .cont > div {
+    padding: 3%;
+  }
+
+  @media screen and (max-width: 750px) {
+    .cont {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .h3 {
+      font-size: 15px;
+    }
+
+    label {
+      font-size: 12px;
+    }
+    .cardbox > div {
+      width: 120px;
+    }
+
+    .button {
+      width: 90px;
+      font-size: 10px;
+    }
+
+    th,
+    td {
+      font-size: 12px;
+    }
+    .filt {
+      display: none;
+    }
+    .cont > div {
+      padding: 3px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .cardbox > div {
+      width: 110px;
+    }
+    .button {
+      width: 80px;
+      font-size: 8px;
+    }
+  }
+</style>
